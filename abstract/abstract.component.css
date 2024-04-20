@@ -1,0 +1,24 @@
+.main-content{
+    position: relative;
+    background-color: rgb(209, 212, 211);
+    min-height: 100vh;
+    
+    transition: all 0.5s ease;
+    width: 100%;
+    padding: 1rem;
+} 
+.container{
+  position: relative;
+  background-color: aliceblue;
+  height: 10rem;
+  width: 20rem;
+  padding: 10px;
+}
+.container p{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+
+

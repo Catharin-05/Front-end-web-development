@@ -1,0 +1,93 @@
+.main-content{
+    position: relative;
+    background-color: rgb(209, 212, 211);
+    min-height: 100vh;
+    
+    transition: all 0.5s ease;
+    width: 100%;
+    padding: 1rem;
+} 
+.row {
+    display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+   justify-content: flex-start;
+   align-items: flex-start; 
+   
+ }
+
+ .column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 0px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  div.Art-box {
+    
+    border: 10px solid white;
+    transition: all 0.3s ease;
+    position: relative;
+    
+  }
+  
+  
+  div.Art-box:hover {
+    border: 30px solid white;
+  }
+  
+  .desc{
+    position: relative;
+    padding: 25px;
+    text-align: center;
+    
+    background-color: white;
+  }
+
+  .detail{
+    display: none;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  
+
+
+
+  .cart{
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      font-size: larger;
+      cursor: pointer;
+      font-size:larger ;
+  }
+  .Art-box:hover .detail{
+    display: contents;
+  }
+  
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+@media only screen and (max-width: 800px) {
+.column {
+  flex: 50%;
+  max-width: 50%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 600px) {
+.column {
+  flex: 100%;
+  max-width: 100%;
+}
+}  
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
